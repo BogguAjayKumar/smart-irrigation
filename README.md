@@ -1,4 +1,4 @@
-# 🌱 Smart Irrigation System (Arduino Uno)
+# Smart Irrigation System (Arduino Uno)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Arduino: Uno](https://img.shields.io/badge/Board-Arduino%20Uno-00979D.svg?logo=arduino&logoColor=white)](https://www.arduino.cc/)
@@ -9,21 +9,21 @@ An automated plant watering and irrigation system built with an **Arduino Uno**,
 
 ---
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Hardware Architecture & Components](#-hardware-architecture--components)
-- [Circuit & Wiring Diagram](#-circuit--wiring-diagram)
-- [Project Structure](#-project-structure)
-- [How to Upload & Run](#-how-to-upload--run)
-- [Calibration Guide](#-calibration-guide)
-- [Troubleshooting & FAQs](#-troubleshooting--faqs)
-- [Future Enhancements](#-future-enhancements)
-- [License](#-license)
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Hardware Architecture & Components](#hardware-architecture--components)
+- [Circuit & Wiring Diagram](#circuit--wiring-diagram)
+- [Project Structure](#project-structure)
+- [How to Upload & Run](#how-to-upload--run)
+- [Calibration Guide](#calibration-guide)
+- [Troubleshooting & FAQs](#troubleshooting--faqs)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
 
 ---
 
-## 🌟 Overview
+## Overview
 
 Overwatering and underwatering are two of the biggest causes of plant failure in home gardens and precision agriculture. This project monitors real-time soil moisture levels using an analog probe and automatically triggers a water pump when the soil becomes dry. 
 
@@ -31,7 +31,7 @@ To protect the soil and pump, it uses an **automated soak cycle** (burst spray $
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Automated Irrigation Control:** Switches on a water pump when soil moisture falls below threshold ($< 30\%$).
 - **Anti-Flooding & Soak Protection:** Runs the pump in timed bursts ($3\text{ seconds}$), followed by a soaking wait time ($7\text{ seconds}$) so water penetrates down to root depth before re-evaluating.
@@ -42,7 +42,7 @@ To protect the soil and pump, it uses an **automated soak cycle** (burst spray $
 
 ---
 
-## 🛠️ Hardware Architecture & Components
+## Hardware Architecture & Components
 
 | Component | Quantity | Purpose |
 | :--- | :---: | :--- |
@@ -56,7 +56,7 @@ To protect the soil and pump, it uses an **automated soak cycle** (burst spray $
 
 ---
 
-## 🔌 Circuit & Wiring Diagram
+## Circuit & Wiring Diagram
 
 ### Pin Connection Summary
 
@@ -93,7 +93,7 @@ To protect the soil and pump, it uses an **automated soak cycle** (burst spray $
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 smart-irrigation/
@@ -107,7 +107,7 @@ smart-irrigation/
 
 ---
 
-## 🚀 How to Upload & Run
+## How to Upload & Run
 
 ### 1. Requirements
 - [Arduino IDE](https://www.arduino.cc/en/software) (version 1.8.x or 2.x).
@@ -141,7 +141,7 @@ smart-irrigation/
 
 ---
 
-## ⚖️ Calibration Guide
+## Calibration Guide
 
 Sensors and soils vary based on salinity, mineral content, and probe geometry.
 
@@ -158,7 +158,7 @@ Sensors and soils vary based on salinity, mineral content, and probe geometry.
 
 ---
 
-## 🔧 Troubleshooting & FAQs
+## Troubleshooting & FAQs
 
 ### Q: `avrdude: stk500_getsync(): not in sync: resp=0x00`
 - **Cause 1:** Selected the wrong COM port in **Tools > Port**. (Ensure you select the Arduino Uno COM port, e.g. `COM8`).
@@ -173,7 +173,7 @@ Sensors and soils vary based on salinity, mineral content, and probe geometry.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Add an ambient temperature & humidity sensor (DHT11/DHT22) for VPD (Vapor Pressure Deficit) calculation.
 - [ ] Incorporate an I2C 16x2 LCD or 0.96" SSD1306 OLED display for on-site monitoring.
@@ -182,6 +182,6 @@ Sensors and soils vary based on salinity, mineral content, and probe geometry.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE) - feel free to use, modify, and distribute for personal and commercial projects.
